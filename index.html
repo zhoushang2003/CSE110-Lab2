@@ -1,58 +1,92 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>会议记录</title>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>番茄时钟初次头脑风暴</h1>
-        <h2>头脑风暴</h2>
-        <h3>日期：2024-04-14</h3>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h2>Brainstorming Session</h2>
+        <p><strong>Date:</strong> April 14, 2024</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#minutes">Meeting Minutes</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Feedback Form</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
-            <h2>出席人员</h2>
+        <section id="minutes">
+            <h2>Attendees</h2>
             <ul>
-                <li>张三</li>
-                <li>李四</li>
+                <li>Alice Johnson</li>
+                <li>Bob Smith</li>
+                <li>Charlie Davis</li>
             </ul>
-        </section>
-        <section>
-            <h2>会议议程</h2>
+
+            <h2>Agenda</h2>
             <ol>
-                <li>讨论新项目</li>
-                <li>分配任务</li>
+                <li>Introduction to the project</li>
+                <li>Discussion of core features</li>
+                <li>Assignment of initial tasks</li>
             </ol>
+
+            <h2>Unfinished Business</h2>
+            <p>None from previous meetings.</p>
+
+            <h2>New Business</h2>
+            <ul>
+                <li>Discuss potential technologies for development</li>
+                <li>Set next meeting date</li>
+            </ul>
+
+            <h2>Miscellaneous</h2>
+            <p>Charlie suggested a possible integration with existing task management tools.</p>
         </section>
-        <section>
-            <h2>遗留问题</h2>
-            <p>上次会议未解决的问题...</p>
+
+        <section id="media">
+            <h2>Diagrams Presented</h2>
+            <img src="path/to/diagram.jpg" alt="Sketch of the proposed application interface">
+
+            <h2>Meeting Recordings</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
         </section>
-        <section>
-            <h2>新的议题</h2>
-            <p>需要讨论的新问题...</p>
-        </section>
-        <section>
-            <h2>其他</h2>
-            <p>任何人想要提出的评论、问题或担忧...</p>
-        </section>
-        <footer>
-            <p>版权所有 &copy; 2024</p>
-        </footer>
     </main>
-    <aside>
-        <h2>相关媒体</h2>
-        <img src="path/to/diagram.jpg" alt="示意图">
-        <audio controls>
-            <source src="path/to/meeting.ogg" type="audio/ogg">
-            <source src="path/to/meeting.mp3" type="audio/mpeg">
-            你的浏览器不支持 audio 元素。
-        </audio>
-        <video controls>
-            <source src="path/to/video.mp4" type="video/mp4">
-            你的浏览器不支持 video 元素。
-        </video>
-    </aside>
+
+    <footer>
+        <p>Contact us at <a href="mailto:info@pomodoroteam.com">info@pomodoroteam.com</a></p>
+    </footer>
+
+    <div id="form">
+        <h2>Feedback Form</h2>
+        <form>
+            <fieldset>
+                <legend>Your feedback</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label>Are you satisfied with the meeting?</label>
+                <input type="radio" id="yes" name="satisfaction" value="yes"><label for="yes">Yes</label>
+                <input type="radio" id="no" name="satisfaction" value="no"><label for="no">No</label><br><br>
+                <label for="nextTopics">Topics for next meeting:</label>
+                <textarea id="nextTopics" name="nextTopics"></textarea><br><br>
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
